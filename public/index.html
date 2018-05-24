@@ -7,22 +7,28 @@
   <link rel="stylesheet" href="/css/styles.css">
 </head>
 
-<body class="timestamp-microservice">
+<body id="timestamp-microservice">
 
-  <div>
-    <h2>API Basejump: Timestamp microservice</h2>
+  <p id='pageTitle'>API Basejump: Timestamp microservice</p>
+
+  <div id="left-bar">
+    <div id="user-stories">
     <p>User stories:</p>
     <ol>
-      <li>I can pass a string as a parameter, and it will check...</li>
-      <li>If it does, it returns both the Unix...</li>
-      <li>If it does not contain a date or Unix timestamp...</li>
+      <li>I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural<br/>
+        language date (e.g. January 1, 2018)</li>
+      <li>If it does, it returns both the Unix timestamp and the natural language form of that date.</li>
+      <li>If it does not contain a date or Unix timestamp, it returns null for those properties.</li>
     </ol>
-    <h3>Example usage:</h3>
-    <p>https://timestamp-ms.herokuapp.com/December%2015,%202015</p>
-    <p>https://timestamp-ms.herokuapp.com/1450137600</p>
+  </div>
+  </div>
+  <div>
+    <p id='examples'>Example usage:</p>
+      <span id='code'>https://tranquil-cliffs-15929.herokuapp.com/December%2015,%202015</span><br/>
+      <span id='code'>https://tranquil-cliffs-15929.herokuapp.com/1450137600</span>
 
-    <h3>Example output:</h3>
-    <p>{ "unix": 1450137600, "natural": "December 15, 2015"}</p>
+    <p id='examples'>Example output:</p>
+    <span id='code'>{ "unix": 1450137600, "natural": "December 15, 2015"}</span>
 
   </div>
 

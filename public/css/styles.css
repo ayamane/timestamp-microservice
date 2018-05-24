@@ -1,0 +1,28 @@
+#user-stories {
+  font-family: 'verdana', sans-serif;
+  font-weight: normal;
+  padding-left: 10px;
+}
+#left-bar {
+  border-left: solid LightGray;
+}
+
+#pageTitle {
+  font-family: 'verdana', sans-serif;
+  font-size: 1.875em;
+}
+
+#examples {
+  font-size: 1.25em;
+  font-family: 'verdana', sans-serif;
+}
+
+#code {
+  font-family: 'courier new';
+  font-size: 0.825em;
+  font-weight: 500;
+  color: red;
+  background-color: rgba(255, 230, 230, 0.4);
+  padding: 2px 2px 2px 2px;
+  line-height: 0.5;
+}
